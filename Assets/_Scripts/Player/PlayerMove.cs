@@ -41,7 +41,14 @@ public class PlayerMove : MonoBehaviour
     {
         moveDirection = new Vector2(playerInputHandler.Move.x * walkSpeed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = moveDirection;
-        
+        if (playerInputHandler.Move.x != 0)
+        {
+            anim.SetBool("isMoving", true);
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
+        }
 
 
     }
