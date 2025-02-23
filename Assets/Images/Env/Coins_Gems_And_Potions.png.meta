@@ -1060,7 +1060,44 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Coins_Gems_And_Potions_0: 8902967172317433849
+      Coins_Gems_And_Potions_1: 7606105246785770245
+      Coins_Gems_And_Potions_10: -5082805337415608519
+      Coins_Gems_And_Potions_11: -5457066048439844123
+      Coins_Gems_And_Potions_12: 8456887473393436599
+      Coins_Gems_And_Potions_13: -2233242816558803986
+      Coins_Gems_And_Potions_14: 3294169067863678807
+      Coins_Gems_And_Potions_15: 4468187011626884593
+      Coins_Gems_And_Potions_16: -5269574229053226768
+      Coins_Gems_And_Potions_17: 1063221869940114520
+      Coins_Gems_And_Potions_18: 2972648514559329782
+      Coins_Gems_And_Potions_19: 8933382712954687138
+      Coins_Gems_And_Potions_2: -1344105523472181079
+      Coins_Gems_And_Potions_20: -8976438806297021696
+      Coins_Gems_And_Potions_21: 7922559130973385922
+      Coins_Gems_And_Potions_22: 3040452053856773882
+      Coins_Gems_And_Potions_23: 3516081638690110592
+      Coins_Gems_And_Potions_24: -1207479291823736374
+      Coins_Gems_And_Potions_25: -4938736905939401695
+      Coins_Gems_And_Potions_26: -6892485748833963620
+      Coins_Gems_And_Potions_27: 6263803913264457201
+      Coins_Gems_And_Potions_28: 2304726199068749540
+      Coins_Gems_And_Potions_29: -8067504519105367777
+      Coins_Gems_And_Potions_3: 1220589369414517478
+      Coins_Gems_And_Potions_30: 353414315195559539
+      Coins_Gems_And_Potions_31: -2559836060308901741
+      Coins_Gems_And_Potions_32: -8197711256145224360
+      Coins_Gems_And_Potions_33: -7352682918982747891
+      Coins_Gems_And_Potions_34: -6114417436416732876
+      Coins_Gems_And_Potions_35: 8260103469723576312
+      Coins_Gems_And_Potions_36: -5373000377379188105
+      Coins_Gems_And_Potions_4: -6200411920516034783
+      Coins_Gems_And_Potions_5: 4760811094573706346
+      Coins_Gems_And_Potions_6: 6236671122015164990
+      Coins_Gems_And_Potions_7: -2225446882248646098
+      Coins_Gems_And_Potions_8: 4277378632089914592
+      Coins_Gems_And_Potions_9: 659801289104109342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

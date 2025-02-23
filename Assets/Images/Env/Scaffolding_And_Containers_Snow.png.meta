@@ -1060,7 +1060,44 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Scaffolding_And_Containers_Snow_0: -3064436142599809619
+      Scaffolding_And_Containers_Snow_1: 300132739400832868
+      Scaffolding_And_Containers_Snow_10: -6614005861638315052
+      Scaffolding_And_Containers_Snow_11: 6521575298670686455
+      Scaffolding_And_Containers_Snow_12: 3672677823328005695
+      Scaffolding_And_Containers_Snow_13: -8376449334246869234
+      Scaffolding_And_Containers_Snow_14: 3839863544370148204
+      Scaffolding_And_Containers_Snow_15: -8002188870542690587
+      Scaffolding_And_Containers_Snow_16: -1916988070149044586
+      Scaffolding_And_Containers_Snow_17: -4663374292107674953
+      Scaffolding_And_Containers_Snow_18: -5277525149766127445
+      Scaffolding_And_Containers_Snow_19: -1653074328788316122
+      Scaffolding_And_Containers_Snow_2: -7121353923663145608
+      Scaffolding_And_Containers_Snow_20: 1517476028949833933
+      Scaffolding_And_Containers_Snow_21: 5803441944508909929
+      Scaffolding_And_Containers_Snow_22: -7546388261868161445
+      Scaffolding_And_Containers_Snow_23: 303720377095843996
+      Scaffolding_And_Containers_Snow_24: 6107724016247938758
+      Scaffolding_And_Containers_Snow_25: 6478182187210682658
+      Scaffolding_And_Containers_Snow_26: 7091947483343359096
+      Scaffolding_And_Containers_Snow_27: 4026431635778225425
+      Scaffolding_And_Containers_Snow_28: 7992263301271620412
+      Scaffolding_And_Containers_Snow_29: -384906568341811876
+      Scaffolding_And_Containers_Snow_3: -439355178396281849
+      Scaffolding_And_Containers_Snow_30: 8466132081879734620
+      Scaffolding_And_Containers_Snow_31: 1165573405982446212
+      Scaffolding_And_Containers_Snow_32: 5336078339377518436
+      Scaffolding_And_Containers_Snow_33: -3848073354253920990
+      Scaffolding_And_Containers_Snow_34: -5108153341946746021
+      Scaffolding_And_Containers_Snow_35: 7483495479059042764
+      Scaffolding_And_Containers_Snow_36: 5513868982352164360
+      Scaffolding_And_Containers_Snow_4: 555602223131804795
+      Scaffolding_And_Containers_Snow_5: 1551293636050522856
+      Scaffolding_And_Containers_Snow_6: -2208183183827087092
+      Scaffolding_And_Containers_Snow_7: -7568041733650400265
+      Scaffolding_And_Containers_Snow_8: -2083370661233636288
+      Scaffolding_And_Containers_Snow_9: 6172919754082125735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
