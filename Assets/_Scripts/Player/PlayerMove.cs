@@ -17,11 +17,13 @@ public class PlayerMove : MonoBehaviour
     private Vector2 moveDirection;
     private Rigidbody2D rb2d;
     private SpriteRenderer sr;
+    private Animator anim;
 
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
     private void Start()
     {
@@ -39,6 +41,8 @@ public class PlayerMove : MonoBehaviour
     {
         moveDirection = new Vector2(playerInputHandler.Move.x * walkSpeed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = moveDirection;
+        
+
 
     }
 
