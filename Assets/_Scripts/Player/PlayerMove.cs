@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -19,12 +19,15 @@ public class PlayerMove : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
 
+    private bool isGrounded; // ������ ����� ��� �������� ����
+
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
+
     private void Start()
     {
         playerInputHandler = InputHandler.instance;
@@ -32,48 +35,49 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
+        isGrounded = Physics2D.Raycast(ground.position, Vector2.down, 0.2f, groundLayer);
+
         HandleMove();
         HandleJump();
         Flip();
+        UpdateAnimation();
     }
 
     private void HandleMove()
     {
         moveDirection = new Vector2(playerInputHandler.Move.x * walkSpeed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = moveDirection;
-        if (playerInputHandler.Move.x != 0)
-        {
-            anim.SetBool("isMoving", true);
-        }
-        else
-        {
-            anim.SetBool("isMoving", false);
-        }
-
-
     }
 
     private void HandleJump()
     {
-        bool isGrounded = Physics2D.Raycast(ground.transform.position, Vector2.down, 0.2f, groundLayer);
-        //Debug.DrawRay(ground.position, Vector2.down, Color.green);
-        moveDirection = new Vector2(rb2d.linearVelocity.x, jumpForce);
-
         if (playerInputHandler.isJump && isGrounded)
         {
-            //rb2d.AddForce(moveDirection, ForceMode2D.Impulse);
-            rb2d.linearVelocity = moveDirection;
+            rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpForce);
         }
-
     }
 
-    public void Flip()
+    private void UpdateAnimation()
     {
-        if (playerInputHandler.Move.x == -1)
+        if (!isGrounded)
+        {
+            anim.SetBool("isJumping", true);
+            anim.SetBool("isMoving", false);
+        }
+        else
+        {
+            anim.SetBool("isJumping", false);
+            anim.SetBool("isMoving", playerInputHandler.Move.x != 0);
+        }
+    }
+
+    private void Flip()
+    {
+        if (playerInputHandler.Move.x < 0)
         {
             sr.flipX = true;
         }
-        else if (playerInputHandler.Move.x == 1)
+        else if (playerInputHandler.Move.x > 0)
         {
             sr.flipX = false;
         }
